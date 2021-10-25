@@ -2,14 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\clientes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
     //Lista
-    public function list(){
-        $users= [ 'usuarios' ] = Usuario :: paginate ( 5 );
+    public function list()
+    {
+        $data['users'] = clientes::paginate(5);
 
-         vistaderetorno ( 'usuarios.list' , $users );
+        return view('usuarios.listar', $data);
+    }
 }
