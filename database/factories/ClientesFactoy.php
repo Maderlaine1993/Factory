@@ -10,6 +10,6 @@ $factory->define(clientes::class, function (Faker $faker) {
         'nombre' => $faker->name,
         'direccion' => $faker->streetAddress,
         'telefono' => $faker->tollFreePhoneNumber,
-        'email' => $faker->email
+        'email' => $faker->freeEmail
     ];
 });

@@ -4,7 +4,6 @@
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <h2 class="text-center mb-3"> Usuarios Guardados </h2>
-                <a class="btn btn-success mb-5" href="{{url('/form') }}"> Agregar usuario </a>
 
                 <!--Mensaje Flash-->
                 @if(session('usuarioEliminado'))
@@ -27,8 +26,9 @@
                     @foreach($users as $user)
                         <tr>
                             <td>{{$user->nombre}}</td>
+                            <td>{{$user->direccion}}</td>
+                            <td>{{$user->telefono}}</td>
                             <td>{{$user->email}}</td>
-                            <td>{{$user->descripcion}}</td>
                             <td>
                                 <div class="btn-group">
                                     <a class="btn btn-primary mb-2 mr-3" href="">

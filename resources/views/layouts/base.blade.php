@@ -10,17 +10,13 @@
         <title> Document </title>
     </head>
 
-    <body>
+    <body class="p-3 mb-2 bg-light text-dark">
     <nav class="navbar navbar-dark bg-primary ">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{url('/')}}">
 
     Usuarios
              </a>
-            <a class="navbar-brand" href="{{url('/')}}">
-
-    Roles
-            </a>
         </div>
     </nav>
     <div class="container">
