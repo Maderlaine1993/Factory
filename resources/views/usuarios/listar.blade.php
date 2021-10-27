@@ -3,7 +3,7 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <h2 class="text-center mb-3"> Usuarios Guardados </h2>
+                <h2 class="text-center mb-3"> Listado de clientes </h2>
 
                 <!--Mensaje Flash-->
                 @if(session('usuarioEliminado'))

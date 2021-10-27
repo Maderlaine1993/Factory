@@ -15,7 +15,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="{{url('/')}}">
 
-    Usuarios
+    Clientes
              </a>
         </div>
     </nav>
